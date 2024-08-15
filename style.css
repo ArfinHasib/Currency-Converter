@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: linear-gradient(45deg, #0172af, #74febd);
+}
+
+::selection {
+    color: black;
+    background: white;
+}
+
+.wrapper {
+    width: 370px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: #020323;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+.wrapper header {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #444;
+    color: white;
+}
+
+form p {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+form input {
+    height: 50px;
+    font-size: 17px;
+    padding: 0 15px;
+    border: 1px solid #999;
+    background: #555;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #74febd;
+    background: #555;
+}
+
+form .drop-list {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.drop-list .select-box {
+    display: flex;
+    width: 115px;
+    height: 45px;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: center;
+    border: 1px solid #999;
+    background: white;
+    color: black;
+}
+
+.select-box img {
+    max-width: 21px;
+}
+
+.select-box select {
+    width: auto;
+    font-size: 16px;
+    background: none;
+    margin: 0 -5px 0 5px;
+    color: black;
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: white;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.drop-list .icon {
+    cursor: pointer;
+    margin-top: 25px;
+    font-size: 22px;
+    color: white;
+}
+
+form .exchange-rate {
+    font-size: 17px;
+    margin: 20px 0 30px;
+}
+
+form button {
+    height: 52px;
+    color: #121212;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    background: #74febd;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: white;
+    color: #121212;
+    transform: scale(1.01);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
