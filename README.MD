@@ -2,4 +2,4 @@
 
 ## Watch the Full Tutorial on YouTube [link](hhttps://youtu.be/rtqw0dHecAM)
 
-![preview img](preview.jpg)
+![preview img](preview2.jpg)
